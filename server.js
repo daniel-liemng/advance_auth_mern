@@ -16,6 +16,7 @@ app.use(morgan('dev'))
 
 // Route
 app.use('/api/auth', require('./routes/auth'))
+app.use('/api/private', require('./routes/private'))
 
 // Error Handler Middleware should be placed last of the middlewares
 app.use(errorHandler)
